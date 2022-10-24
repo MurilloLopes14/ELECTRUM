@@ -1,0 +1,96 @@
+@use "../1-BASE/variables"
+@use "../1-BASE/baseMixins"
+@use "./_layoutsMixins"
+
+.header
+    background-color: variables.$bg-color
+
+    .top_header
+        background-color: variables.$secondary-bg-color
+        color: variables.$light-color
+        @include baseMixins.mobile
+            display: none
+
+        &_container
+            padding: .8rem 0
+            @include layoutsMixins.centerContent()
+
+            span
+                margin-right: 1rem
+
+            i
+                margin-right: .3rem
+
+            a
+                color: variables.$light-color
+
+    .main_header
+        &_container
+            padding: 1.3rem 0
+            @include layoutsMixins.centerContent()
+
+            @include baseMixins.mobile
+                flex-direction: column
+                align-items: center
+
+            a, span, i
+                color: variables.$light-color
+
+            #brand
+                font-weight: 900
+                font-size: 3rem
+
+                i
+                    color: variables.$primary-color
+                    font-size: 2rem
+
+            #search_form
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 45%
+
+                @include baseMixins.mobile
+                    width: 100%
+                    margin: 2rem 0
+
+                input
+                    height: 40px
+
+                #search
+                    width: 60%
+                    @include layoutsMixins.roudedInputs()
+
+            .header_actions_menu
+                display: flex
+                align-items: center
+
+                .wish_list, .header_cart
+                    @include layoutsMixins.headerIcon()
+
+                    @include baseMixins.mobile
+                        margin: 1rem
+
+    .bottom_header
+        background-color: variables.$light-color
+        border-bottom: 2px solid variables.$section-bg-color
+        border-top: 3px solid variables.$primary-color
+
+        ul
+            @include layoutsMixins.centerContent()
+            justify-content: left
+            padding: 1rem 0
+
+            @include baseMixins.mobile
+                display: none
+
+            li
+                margin-right: 1.3rem
+
+                a
+                    color: variables.$link-color
+                    border-bottom: 2px solid transparent
+
+                    &:hover
+                        color: variables.$primary-color
+                        border-color: variables.$primary-color

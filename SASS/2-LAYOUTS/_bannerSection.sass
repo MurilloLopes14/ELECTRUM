@@ -1,0 +1,10 @@
+@use "../1-BASE/baseMixins"
+@use "../2-LAYOUTS/layoutsMixins"
+
+.banners
+    @include layoutsMixins.centerContent()
+    padding: 3rem 0
+
+    @include baseMixins.mobile
+        flex-direction: column
+        align-items: center

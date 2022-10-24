@@ -1,0 +1,62 @@
+@use "../1-BASE/_variables"
+@use "../1-BASE/_baseMixins"
+@use "layoutsMixins"
+
+.footer
+    background-color: variables.$bg-color
+    padding: 3rem 0
+
+    @include baseMixins.mobile
+        padding: 3rem
+
+    a, p
+        color: variables.$text-color
+
+    li, p
+        margin-bottom: 1rem
+
+        a
+            &:hover
+                color: variables.$primary-color
+
+    i
+        margin-right: .3rem
+
+    h3
+        color: variables.$light-color
+        text-transform: uppercase
+        font-size: 1.75rem
+        margin-bottom: 1.5rem
+
+    &_top
+        padding-bottom: 3rem
+        @include layoutsMixins.centerContent()
+
+        @include baseMixins.mobile
+            flex-direction: column
+
+        &_about, &_categories, &_information, &_menu
+            max-width: 25%
+
+            @include baseMixins.mobile
+                max-width: 100%
+                margin-bottom: 1rem
+
+    &_bottom
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        @include layoutsMixins.centerContent()
+
+        &_payments
+            margin-bottom: 2rem
+
+            i
+                color: variables.$dark-color
+                cursor: pointer
+                font-size: 3rem
+                margin: 5px
+                transition: .4s
+
+                &:hover
+                    color: variables.$primary-color

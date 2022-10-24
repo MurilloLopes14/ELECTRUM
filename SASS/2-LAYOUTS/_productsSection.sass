@@ -1,0 +1,24 @@
+@use "../1-BASE/_baseMixins"
+@use "layoutsMixins"
+
+.products_grid
+    @include layoutsMixins.centerContent()
+    flex-direction: column
+    padding: 2rem 0
+
+    h2
+        font-size: 2rem
+        text-transform: uppercase
+
+        @include baseMixins.mobile
+            text-align: center
+
+    &_container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        padding: 2rem 0
+
+        @include baseMixins.mobile
+            flex-direction: column
+            align-items: center

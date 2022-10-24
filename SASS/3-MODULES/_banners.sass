@@ -1,0 +1,61 @@
+@use "../1-BASE/_variables"
+@use "../1-BASE/_baseMixins"
+@use "../3-MODULES/_modulesMixins"
+
+.banner
+    width: 30%
+    height: 200px
+    position: relative
+    color: variables.$light-color
+    transition: .4s
+    @include modulesMixins.centerBg()
+    background-size: 100%
+
+    @include baseMixins.mobile
+        width: 90%
+        margin: 1rem
+
+    &:hover
+        background-size: 120%
+
+    &_cover
+        background-color: variables.$primary-color
+        width: 70%
+        height: 100%
+        opacity: .8
+        border-bottom-right-radius: 6rem
+
+        @include baseMixins.devResponsive
+        width: 90%
+        opacity: .7
+
+    &_content
+        position: absolute
+        top: 0
+        left: 0
+        padding: 2rem
+
+        h2
+            font-size: 2.1rem
+            margin-bottom: 1rem
+            max-width: 70%
+            line-height: 2.5rem
+
+        a
+            font-size: 1.5rem
+            color: variables.$light-color
+            font-weight: bold
+            display: flex
+            align-items: center
+
+        i
+            color: variables.$light-color
+            margin-left: .8rem
+            margin-top: .1rem
+
+#banner_1
+    background-image: url('../ASSETS/IMG/banner-1.jpg')
+#banner_2
+    background-image: url('../ASSETS/IMG/banner-2.jpg')
+#banner_3
+    background-image: url('../ASSETS/IMG/banner-3.jpg')

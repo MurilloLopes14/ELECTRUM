@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/main.css" />
+    <!-- FavIcon -->
+    <link
+      rel="shortcut icon"
+      href="./ASSETS/icons8-lightning-bolt-96.png"
+      type="image/x-icon"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Electrum</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <section class="top_header">
+        <div class="top_header_container">
+          <div class="store_info_container">
+            <span><i class="fas fa-phone"></i>(11) 90990-0189</span>
+            <span
+              ><i class="far fa-envelope"></i>murillo.oliveira@outlook.com</span
+            >
+            <span
+              ><i class="fas fa-map-marker-alt"></i>Rua das Flores, 234</span
+            >
+          </div>
+          <div class="header_user_top_menu">
+            <span><i class="fas fa-dollar sign"></i><a href="#">BRL</a></span>
+            <span><i class="fas fa-user"></i><a href="#">Minha Conta</a></span>
+          </div>
+        </div>
+      </section>
+      <section class="main_header">
+        <div class="main_header_container">
+          <a href="#" id="brand">Electrum <i class="fas fa-bolt"></i></a>
+          <form id="search_form">
+            <input type="text" id="search" placeholder="Busque aqui" />
+            <input type="submit" class="btn btn_half" value="Pesquisar" />
+          </form>
+          <div class="header_actions_menu">
+            <div class="wish_list">
+              <span class="qty">0</span>
+              <i class="far fa-heart"></i>
+              <a href="#">Favoritos</a>
+            </div>
+            <div class="header_cart">
+              <span class="qty">0</span>
+              <i class="fas fa-shopping-cart"></i>
+              <a href="#">Carrinho</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bottom_header">
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Promoções</a></li>
+            <li><a href="#">Notebooks</a></li>
+            <li><a href="#">Celulares</a></li>
+            <li><a href="#">PCs</a></li>
+            <li><a href="#">Acessórios</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <!-- Main Content -->
+    <main>
+      <!-- Banner & Products -->
+      <section class="banners">
+        <article class="banner" id="banner_1">
+          <div class="banner_cover">
+            <div class="banner_content">
+              <h2>Promoção de Notebooks</h2>
+              <a href="#">Ver mais <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+        </article>
+        <article class="banner" id="banner_2">
+          <div class="banner_cover">
+            <div class="banner_content">
+              <h2>Lançamento de acessórios</h2>
+              <a href="#">Ver mais <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+        </article>
+        <article class="banner" id="banner_3">
+          <div class="banner_cover">
+            <div class="banner_content">
+              <h2>Câmeras potentes</h2>
+              <a href="#">Ver mais <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="products_grid">
+        <h2>Produtos Novos</h2>
+        <div class="products_grid_container">
+          <article class="products_grid_card">
+            <span class="label new">New</span>
+            <img src="./ASSETS/IMG/prod-1.jpg" alt="Produto 1" />
+            <figure>
+              <figcaption class="category">Categoria</figcaption>
+              <figcaption class="product_name">
+                Televisão MSI 4k 55 polegas HD
+              </figcaption>
+              <figcaption class="product_price">R$: 3.599,00</figcaption>
+              <div class="rating-box">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <button class="btn">Comprar</button>
+            </figure>
+          </article>
+          <article class="products_grid_card">
+            <span class="label new">New</span>
+            <img src="./ASSETS/IMG/prod-2.jpg" alt="Produto 2" />
+            <figure>
+              <figcaption class="category">Categoria</figcaption>
+              <figcaption class="product_name">
+                Microfone HyperX Gamer RGB
+              </figcaption>
+              <figcaption class="product_price">R$: 659,00</figcaption>
+              <div class="rating-box">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <button class="btn">Comprar</button>
+            </figure>
+          </article>
+          <article class="products_grid_card">
+            <span class="label new">New</span>
+            <img src="./ASSETS/IMG/prod-3.jpg" alt="Produto 3" />
+            <figure>
+              <figcaption class="category">Categoria</figcaption>
+              <figcaption class="product_name">
+                Televisão Samsgung 60 polegadas 55k HD
+              </figcaption>
+              <figcaption class="product_price">R$: 5.799,00</figcaption>
+              <div class="rating-box">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <button class="btn">Comprar</button>
+            </figure>
+          </article>
+          <article class="products_grid_card">
+            <span class="label new">New</span>
+            <img src="./ASSETS/IMG/prod-4.jpg" alt="Produto 4" />
+            <figure>
+              <figcaption class="category">Categoria</figcaption>
+              <figcaption class="product_name">
+                Gabinete gamer RGB Mid Tower
+              </figcaption>
+              <figcaption class="product_price">R$: 259,00</figcaption>
+              <div class="rating-box">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <button class="btn">Comprar</button>
+            </figure>
+          </article>
+        </div>
+      </section>
+    </main>
+    <!-- Deal -->
+    <section class="deal_container">
+      <div class="deal_container_content">
+        <div class="deal_container_content_timer">
+          <div class="deal_container_timer">
+            <span class="deal_container_timer_timing">02</span>
+            <span class="deal_container_timer_word">Dias</span>
+          </div>
+          <div class="deal_container_timer">
+            <span class="deal_container_timer_timing">12</span>
+            <span class="deal_container_timer_word">Horas</span>
+          </div>
+          <div class="deal_container_timer">
+            <span class="deal_container_timer_timing">25</span>
+            <span class="deal_container_timer_word">Minutos</span>
+          </div>
+          <div class="deal_container_timer">
+            <span class="deal_container_timer_timing">37</span>
+            <span class="deal_container_timer_word">Segundos</span>
+          </div>
+        </div>
+        <h2 class="deal_container_content_title">Promoção De Fone Gamer</h2>
+        <p class="deal_container_content_subtitle">
+          Toda a Linha gamer com 50% de desconto
+        </p>
+        <button class="btn">Comprar Agora</button>
+      </div>
+    </section>
+    <!-- Most Seled Products -->
+    <section class="products_grid">
+      <h2>Mais Vendidos</h2>
+      <div class="products_grid_container">
+        <article class="products_grid_card">
+          <span class="label hot">Hot</span>
+          <img src="./ASSETS/IMG/prod-5.jpg" alt="Produto 5" />
+          <figure>
+            <figcaption class="category">Categoria</figcaption>
+            <figcaption class="product_name">
+              Controle Xbox Series X Branco
+            </figcaption>
+            <figcaption class="product_price">R$: 499,00</figcaption>
+            <div class="rating-box">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <button class="btn">Comprar</button>
+          </figure>
+        </article>
+        <article class="products_grid_card">
+          <span class="label hot">Hot</span>
+          <img src="./ASSETS/IMG/prod-6.jpg" alt="Produto 6" />
+          <figure>
+            <figcaption class="category">Categoria</figcaption>
+            <figcaption class="product_name">
+              Samsung Galaxy a73 5G Colorido
+            </figcaption>
+            <figcaption class="product_price">R$: 3.299,00</figcaption>
+            <div class="rating-box">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <button class="btn">Comprar</button>
+          </figure>
+        </article>
+        <article class="products_grid_card">
+          <span class="label hot">Hot</span>
+          <img src="./ASSETS/IMG/prod-7.jpg" alt="Produto 7" />
+          <figure>
+            <figcaption class="category">Categoria</figcaption>
+            <figcaption class="product_name">
+              Notebook Acer empresarial 4k HD
+            </figcaption>
+            <figcaption class="product_price">R$: 2.899,00</figcaption>
+            <div class="rating-box">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <button class="btn">Comprar</button>
+          </figure>
+        </article>
+        <article class="products_grid_card">
+          <span class="label hot">Hot</span>
+          <img src="./ASSETS/IMG/prod-8.jpg" alt="Produto 8" />
+          <figure>
+            <figcaption class="category">Categoria</figcaption>
+            <figcaption class="product_name">
+              Mouse Gamer Lenovo Legion
+            </figcaption>
+            <figcaption class="product_price">R$: 259,00</figcaption>
+            <div class="rating-box">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <button class="btn">Comprar</button>
+          </figure>
+        </article>
+      </div>
+    </section>
+    <!-- News Letter -->
+    <section class="newsLetter_container">
+      <h2>Assine a nossa <span>NewsLetter</span></h2>
+      <form>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="digite seu E-mail"
+        />
+        <input type="submit" value="Assinar" class="btn btn_half" />
+      </form>
+      <div class="social_media">
+        <i class="fab fa-facebook f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-pinterest-p"></i>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <section class="footer_top">
+        <div class="footer_top_about">
+          <h3>Sobre nós</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+            quis dolorem earum delectus tenetur, aperiam obcaecati illum fugit
+            nam? Optio amet dolor dolorum modi ab voluptate necessitatibus,
+            quidem mollitia blanditiis.
+          </p>
+          <p>
+            <i class="fas fa-location-arrow"></i>
+            <a href="#">Rua das Flores, 234</a>
+          </p>
+          <p><i class="fas fa-phone"></i> <a href="#">(11) 98998-0189</a></p>
+          <p>
+            <i class="far fa-envelope"></i
+            ><a href="#">murillo.oliveira1234@outlook.com</a>
+          </p>
+        </div>
+        <div class="footer_top_categories">
+          <h3>Categorias</h3>
+          <ul>
+            <li><a href="#">Promoções</a></li>
+            <li><a href="#">Headsets</a></li>
+            <li><a href="#">PC Gamer</a></li>
+            <li><a href="#">Câmeras</a></li>
+            <li><a href="#">Mouse & Teclado</a></li>
+          </ul>
+        </div>
+        <div class="footer_top_information">
+          <h3>Informações</h3>
+          <ul>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Entre em Contato</a></li>
+            <li><a href="#">Política de privacidade</a></li>
+            <li><a href="#">Pedidos de Devolução</a></li>
+            <li><a href="#">Termos e Condições</a></li>
+          </ul>
+        </div>
+        <div class="footer_top_menu">
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="#">Minha Conta</a></li>
+            <li><a href="#">Carrinho</a></li>
+            <li><a href="#">Lista de Desejos</a></li>
+            <li><a href="#">Rastrear Pedidos</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="footer_bottom">
+        <div class="footer_bottom_payments">
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-diners-club"></i>
+          <i class="fab fa-cc-amazon-pay"></i>
+          <i class="fab fa-cc-apple-pay"></i>
+        </div>
+        <p>Copyright &copy; 2022 - Electrum</p>
+      </section>
+    </footer>
+  </body>
+</html>
